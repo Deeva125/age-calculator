@@ -1,7 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
-import youngAdult from "./youngAdult.png";
+import baby from "./images/baby.png";
+import toddler from "./images/toddler.png";
+import kid from "./images/kid.png";
+import teen from "./images/teen.png";
+import youngAdult from "./images/youngAdult.png";
+import adult from "./images/adult.png";
+import oldMan from "./images/oldMan.png";
+import veryOldMan from "./images/veryOldMan.png";
+import rip from "./images/rip.png";
+import higgs from "./images/higgs.png";
 
 function App() {
   const [year, setyear] = useState(2010);
@@ -23,7 +32,16 @@ function App() {
         className={`container-fluid bg-${mode}`}
         style={{ minHeight: "100vh" }}
       >
-        <div className="d-flex">
+        <div>
+          <button
+            className="btn btn-warning float-end"
+            onClick={handleModeChange}
+          >
+            Change Mode
+          </button>
+        </div>
+        <div>
+          {" "}
           <div className="input-group mb-3 w-50 m-auto">
             <span
               className={`input-group-text ${
@@ -48,10 +66,6 @@ function App() {
               aria-describedby="inputGroup-sizing-default"
             />
           </div>
-
-          <button className="btn btn-warning" onClick={handleModeChange}>
-            Change Mode
-          </button>
         </div>
 
         <div className="text-center">
@@ -65,56 +79,26 @@ function App() {
           </h2>
         </div>
         <div className="w-25 m-auto">
-          {2023 - year < 3 ? (
-            <img
-              className="w-100"
-              src="https://img.freepik.com/free-vector/cute-baby-crawling-cartoon-character_1308-96878.jpg"
-              alt=""
-            />
+          {2023 - year <= 0 ? (
+            <img className="w-100" src={higgs} alt="" />
+          ) : 2023 - year < 3 ? (
+            <img className="w-100" src={baby} alt="" />
           ) : 2023 - year < 5 ? (
-            <img
-              className="w-100"
-              src="https://img.freepik.com/free-vector/cartoon-toddler-wearing-blue-clothes_1308-106741.jpg?w=2000"
-              alt=""
-            />
-          ) : 2023 - year < 10 ? (
-            <img
-              className="w-100"
-              src="https://img.freepik.com/free-vector/little-boy-waving-hand-white-background_1308-81950.jpg?w=2000"
-              alt=""
-            />
-          ) : 2023 - year < 15 ? (
-            <img
-              className="w-100"
-              src="https://us.123rf.com/450wm/jemastock/jemastock2005/jemastock200505420/jemastock200505420.jpg?ver=6"
-              alt=""
-            />
-          ) : 2023 - year < 25 ? (
+            <img className="w-100" src={toddler} alt="" />
+          ) : 2023 - year < 13 ? (
+            <img className="w-100" src={kid} alt="" />
+          ) : 2023 - year < 20 ? (
+            <img className="w-100" src={teen} alt="" />
+          ) : 2023 - year < 45 ? (
             <img className="w-100" src={youngAdult} alt="" />
-          ) : 2023 - year < 40 ? (
-            <img
-              className="w-100"
-              src="https://media.istockphoto.com/id/1160624767/vector/smiling-handsome-guy-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=636Aa-RDEbZQkA0WEpHnhzq0N_4OdNRB28YuBN47Neo="
-              alt=""
-            />
           ) : 2023 - year < 60 ? (
-            <img
-              className="w-100"
-              src="https://thumbs.dreamstime.com/b/vector-illustration-cartoon-happy-senior-elderly-old-man-cartoon-happy-senior-elderly-old-man-145176324.jpg"
-              alt=""
-            />
+            <img className="w-100" src={adult} alt="" />
+          ) : 2023 - year < 80 ? (
+            <img className="w-100" src={oldMan} alt="" />
           ) : 2023 - year < 99 ? (
-            <img
-              className="w-100"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/68217/oldman-clipart-xl.png"
-              alt=""
-            />
+            <img className="w-100" src={veryOldMan} alt="" />
           ) : (
-            <img
-              className="w-100"
-              src="https://clipartix.com/wp-content/uploads/2017/02/Old-man-clip-art-old-men-clipart.png"
-              alt=""
-            />
+            <img className="w-100" src={rip} alt="" />
           )}
         </div>
       </div>
