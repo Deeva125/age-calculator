@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/age-calculator/static/css/main.17351a53.css",
+    "main.js": "/age-calculator/static/js/main.5155306c.js",
+    "static/js/787.9d484e86.chunk.js": "/age-calculator/static/js/787.9d484e86.chunk.js",
+    "static/media/kid.png": "/age-calculator/static/media/kid.307496f5676b61e1c3f2.png",
+    "static/media/baby.png": "/age-calculator/static/media/baby.c16b58ce050fd509e513.png",
+    "static/media/toddler.png": "/age-calculator/static/media/toddler.6ac65604a48a63cb512f.png",
+    "static/media/oldMan.png": "/age-calculator/static/media/oldMan.2c20ec2a545bc29de2f4.png",
+    "static/media/higgs.png": "/age-calculator/static/media/higgs.defd44ebb9f3aed142fd.png",
+    "static/media/teen.png": "/age-calculator/static/media/teen.5b982e893768b363f315.png",
+    "static/media/veryOldMan.png": "/age-calculator/static/media/veryOldMan.55890a6f9a189353bf85.png",
+    "static/media/rip.png": "/age-calculator/static/media/rip.1cbdf52419bb4e3b17e6.png",
+    "static/media/adult.png": "/age-calculator/static/media/adult.a05bf2855109e5ebbaa8.png",
+    "static/media/youngAdult.png": "/age-calculator/static/media/youngAdult.8d180b4888bbc08e764f.png",
+    "static/media/logo.svg": "/age-calculator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/age-calculator/index.html",
+    "main.17351a53.css.map": "/age-calculator/static/css/main.17351a53.css.map",
+    "main.5155306c.js.map": "/age-calculator/static/js/main.5155306c.js.map",
+    "787.9d484e86.chunk.js.map": "/age-calculator/static/js/787.9d484e86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17351a53.css",
+    "static/js/main.5155306c.js"
+  ]
+}
